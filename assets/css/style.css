@@ -5,3 +5,18 @@ body {
 h2, p {
   color: black;
 }
+
+.goodUV {
+  background-color: green;
+  color: white;
+}
+
+.moderateUV {
+  background-color: orange;
+  color: white;
+}
+
+.poorUV {
+  background-color: red;
+  color: white;
+}
