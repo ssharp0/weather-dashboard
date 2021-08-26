@@ -1,6 +1,10 @@
+/* Styling for the body */
+
 body {
   background-color: #FFF9FB;
 }
+
+/* styling for the header section to give room and color */
 
 header {
   margin-bottom: 2%;
@@ -9,10 +13,14 @@ header {
   padding: 1%;
 }
 
+/* styling for h2 to align text */
+
 h2 {
   color: black;
   text-align: center;
 }
+
+/* styling for search button icon */
 
 #searchBtnIcon {
   width: 15px;
@@ -20,6 +28,8 @@ h2 {
   left: auto;
   right: 10px;
 }
+
+/* styling for uvs */
 
 .favorableUV {
   background-color: green;
@@ -36,31 +46,43 @@ h2 {
   color: white;
 }
 
-.forecast {
+/* styling for the forecast slots */
+
+.forecastSlot {
   width: 9rem;
-  background-color: #4B88A2;
   color: white;
   text-align: center;
 }
 
+/* styling for the forecast row */
+
 .forecastRow {
   justify-content: center;
 }
+
+/* styling for the current weather results to give room */
 
 #currentWeatherResults {
   margin-right: 5%;
   margin-left: 5%;
 }
 
+/* styling for the current weather section */
+
 #currentWeatherDiv {
   background-color: #D3D4D9;
 }
+
+/* styling for labels to give some room */
 
 label {
   padding-top: 3%;
   padding-left: 2%;
 }
 
+/* styling for the search history */
+
 .inputSearchHist {
   margin-bottom: 2%;
+  background-color: lightgray;
 }
