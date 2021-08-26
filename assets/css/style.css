@@ -1,12 +1,27 @@
 body {
-  background-color: lightgoldenrodyellow;
+  background-color: #FFF9FB;
 }
 
-h2, p {
+header {
+  margin-bottom: 2%;
+  background-color: #252627;
+  color: white;
+  padding: 1%;
+}
+
+h2 {
   color: black;
+  text-align: center;
 }
 
-.goodUV {
+#searchBtnIcon {
+  width: 15px;
+  display: inline-block;
+  left: auto;
+  right: 10px;
+}
+
+.favorableUV {
   background-color: green;
   color: white;
 }
@@ -16,7 +31,36 @@ h2, p {
   color: white;
 }
 
-.poorUV {
+.severeUV {
   background-color: red;
   color: white;
+}
+
+.forecast {
+  width: 9rem;
+  background-color: #4B88A2;
+  color: white;
+  text-align: center;
+}
+
+.forecastRow {
+  justify-content: center;
+}
+
+#currentWeatherResults {
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+#currentWeatherDiv {
+  background-color: #D3D4D9;
+}
+
+label {
+  padding-top: 3%;
+  padding-left: 2%;
+}
+
+.inputSearchHist {
+  margin-bottom: 2%;
 }
