@@ -146,16 +146,18 @@ function searchWeather(city) {
             // fcstWeatherEl.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecastRes.data.list[forecastIndex].weather[0].icon + '@2x.png')
             fcstWeatherEl.setAttribute('src', `https://openweathermap.org/img/wn/${forecastRes.data.list[forecastIndex].weather[0].icon}@2x.png`)
             fcstWeatherEl.setAttribute('alt', forecastRes.data.list[forecastIndex].weather[0].description)
-            forecastEls[i].append(fcstWeatherEl)
 
             // create forecast temp element and add the forecast temperature for each forecast day and append to the forecast element
             const fcstTempEl = document.createElement('p')
             fcstTempEl.innerHTML = `Temp:  ${forecastRes.data.list[forecastIndex].main.temp} &#176F`
-            forecastEls[i].append(fcstTempEl)
 
             // create forecast humidity element and add the forecast humidity for each forecast day and append to the forecast element
             const fcstHumidityEl = document.createElement('p')
             fcstHumidityEl.innerHTML = `Humidity:  ${forecastRes.data.list[forecastIndex].main.humidity}%`
+
+            // append new elements to the forecast slots
+            forecastEls[i].append(fcstWeatherEl)
+            forecastEls[i].append(fcstTempEl)
             forecastEls[i].append(fcstHumidityEl)
           }
 
