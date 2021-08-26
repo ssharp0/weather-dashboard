@@ -139,11 +139,9 @@ function searchWeather(city) {
             const fcstDateEl = document.createElement('p')
             fcstDateEl.setAttribute('class', 'mt-2 mb-0 forecastDate')
             fcstDateEl.innerHTML = `${fcstMonth}/${fcstDay}/${fcstYear}`
-            forecastEls[i].append(fcstDateEl)
 
             // create img element and add the image url source for each forecast day and append to the forecast element
             const fcstWeatherEl = document.createElement('img')
-            // fcstWeatherEl.setAttribute('src', 'https://openweathermap.org/img/wn/' + forecastRes.data.list[forecastIndex].weather[0].icon + '@2x.png')
             fcstWeatherEl.setAttribute('src', `https://openweathermap.org/img/wn/${forecastRes.data.list[forecastIndex].weather[0].icon}@2x.png`)
             fcstWeatherEl.setAttribute('alt', forecastRes.data.list[forecastIndex].weather[0].description)
 
@@ -156,6 +154,7 @@ function searchWeather(city) {
             fcstHumidityEl.innerHTML = `Humidity:  ${forecastRes.data.list[forecastIndex].main.humidity}%`
 
             // append new elements to the forecast slots
+            forecastEls[i].append(fcstDateEl)
             forecastEls[i].append(fcstWeatherEl)
             forecastEls[i].append(fcstTempEl)
             forecastEls[i].append(fcstHumidityEl)
